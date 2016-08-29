@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>连续无缝滚动</title>
+    <style>
+        body,div,dl,dt,dd,a,img{padding: 0;margin:0;}
+        .main_M_pro{width:520px;overflow: hidden;margin: 50px auto 0;height:173px;}
+        .main_M_proDl{width:200%;*zoom:1;}
+        .main_M_proDl:after{content: ".";clear: both;visibility: hidden;height:0;font-size: 0;display: block;}
+        .main_M_proDl dl{float: left;position: relative;margin-right: 32px;margin-left:3px;}
+        .main_M_proDl dt img{border: 1px solid #ccc;}
+        .main_M_proDl dd{position: absolute;left:0;top:125px;height:36px;}
+        .main_M_proDl dd a{text-decoration: none;font-size: 12px;line-height: 36px;color: #000;text-align: center;}
+    </style>
+</head>
+<body>
+<div class="main_M_pro">
+    <div class="main_M_proDl" id="box">
+        <dl>
+            <dt><a href="#"><img src="images/01.png" width="125" height="125" alt="1" /></a></dt>
+            <dd><a href="#">FDK、FSK系列逆变变压器1</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#"><img  src="images/01.png" width="125" height="125" alt="2" /></a></dt>
+            <dd><a href="#">FDK、FSK系列逆变变压器2</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#"><img src="images/01.png" width="125" height="125" alt="3" /></a></dt>
+            <dd><a href="#">FDK、FSK系列逆变变压器3</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#"><img src="images/01.png" width="125" height="125" alt="3" /></a></dt>
+            <dd><a href="#">FDK、FSK系列逆变变压器4</a></dd>
+        </dl>
+    </div>
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>
